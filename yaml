@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 ---
 
@@ -17,3 +18,24 @@ Follow these steps to set up the project on your local machine.
    ```bash
    git clone https://github.com/Azedesmond/Group-2.git
    cd Group-2
+=======
+
+---
+
+## Getting Started
+
+Follow these steps to set up the project on your local machine.
+
+### Prerequisites
+
+- Python 3.x installed
+- Django installed (`pip install django`)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Azedesmond/Group-2.git
+   cd Group-2
+>>>>>>> 0caad84ee5fa5e2bffa42b93b09fae78714cb0ba
