@@ -1,0 +1,58 @@
+1. Install dependencies (if any):
+
+"pip install -r requirements.txt"
+
+2. Run database migrations:
+
+"python manage.py migrate"
+
+3. Start the server:
+
+python manage.py runserver
+
+4. Access the application in your browser:
+
+http://127.0.0.1:8000
+
+5. Pages and Routes
+Page	Route	Description
+Home	/	Homepage of the intranet system
+Employees	/employee	Employee management page
+About	/about	About page for company information
+Contact	/contact	Contact page for inquiries
+Contributing
+
+6. Contributions are welcome! Follow these steps to contribute:
+
+Fork the repository.
+Create a new branch for your feature or bugfix:
+bash
+Copy
+Edit
+git checkout -b feature-name
+
+7. Commit your changes:
+bash
+Copy
+Edit
+git commit -m "Add a new feature"
+
+8. Push to your fork:
+bash
+Copy
+Edit
+git push origin feature-name
+Open a Pull Request on GitHub.
+
+9. License
+This project is licensed under the MIT License.
+
+
+### How to Use It:
+1. Save the content above in a file named `README.md` in your repository's root directory.
+
+2. Push it to your GitHub repository:
+   ```bash
+   git add README.md
+   git commit -m "Add README documentation"
+   git push origin main
