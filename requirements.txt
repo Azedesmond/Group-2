@@ -1,0 +1,12 @@
+Django==4.2.6  # Adjust the version to match your Django version
+gunicorn==20.1.0  # For production server
+psycopg2-binary==2.9.6  # For PostgreSQL database (if you're using it)
+dj-database-url==1.2.0  # To parse database URLs
+django-environ==0.10.0  # To manage environment variables
+django-crispy-forms==1.14.0  # For crispy form rendering
+whitenoise==6.5.0  # To serve static files in production
+pillow==10.0.0  # For image handling in Django
+requests==2.31.0  # For making HTTP requests
+
+# If deploying to Heroku or Render
+python-decouple==3.8  # For managing environment variables

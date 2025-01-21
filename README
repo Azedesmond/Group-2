@@ -1,0 +1,20 @@
+# Smart Agro LTD Intranet System
+
+This is the repository for the **Smart Agro LTD Intranet System**, a web-based application designed to streamline internal processes such as employee management, supplier and customer tracking, and document uploads.
+
+The project is built using **Django** for the backend and **HTML/CSS** for the frontend, providing a simple and intuitive interface for employees to manage daily operations efficiently.
+
+---
+
+## Features
+
+- **Employee Management**: Add, view, and manage employees.
+- **Supplier and Customer Tracking**: Register and manage information related to suppliers and customers.
+- **Task Assignment**: Assign tasks to employees with detailed descriptions and privilege-based access.
+- **Document Upload**: Upload and manage documents securely.
+- **Static Pages**: About and Contact pages for general information.
+
+---
+
+## File Structure
+
