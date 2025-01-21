@@ -10,7 +10,7 @@ SECRET_KEY = 'your-secret-key'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['group-2-intranet-assignment.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['group-2-intranet-assignment.onrender.com', '127.0.0.1']
 
 # Application definition
 INSTALLED_APPS = [
