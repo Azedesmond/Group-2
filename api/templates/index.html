@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart AgroLTD Intranet Homepage</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Navigation bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007BFF;
+            color: white;
+            padding: 20px 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        /* Main content */
+        .container {
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            flex: 1;
+            min-width: 300px;
+            max-width: 300px;
+            cursor: pointer;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .upload-form {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .upload-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .upload-form input[type="file"] {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .upload-form button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .upload-form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .card-container {
+                flex-direction: column;
+            }
+        }
+
+        /* About and Contact sections */
+        .about, .contact {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .about h2, .contact h2 {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="logo"><img src="/api/templates/image.png" alt="Smart AgroLTD"></div>
+        <div class="links">
+            <a href="/home">Home</a>
+            <a href="/employee">Employees</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+        <!-- Recent news section -->
+        <div class="section">
+            <h2>Update News</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>New Supplier Added</h3>
+                    <p>We have onboarded a new supplier for organic fertilizers. Check the supplier directory for details.</p>
+                </div>
+                <div class="card">
+                    <h3>Employee Training Scheduled</h3>
+                    <p>Join us for an online training session on customer engagement strategies on Jan 25th.</p>
+                </div>
+                <div class="card">
+                    <h3>Platform Upgrade</h3>
+                    <p>The platform will be undergoing maintenance on Feb 1st. Expect improved performance afterward.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Employee training section -->
+        <div class="section">
+            <h2>Employee Training</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Session on Customer Engagement</h3>
+                    <p>Learn new techniques for improving customer relationships. Don’t miss out!</p>
+                </div>
+                <div class="card">
+                    <h3>Using the New Platform</h3>
+                    <p>Get hands-on training on the upgraded platform features.</p>
+                </div>
+                <div class="card">
+                    <h3>Data Management Basics</h3>
+                    <p>Master the basics of managing data effectively on our system.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- About section -->
+        <div id="about" class="about">
+            <h2>About Us</h2>
+            <p>Welcome to Smart AgroLTD! We are a forward-thinking company dedicated to enhancing agricultural supply chains through technology and innovation. Our platform connects suppliers, customers, and employees to streamline operations, ensure traceability, and improve communication.</p>
+            <p>Our mission is to empower the agricultural sector with cutting-edge solutions while fostering sustainable growth and development. We believe in creating a collaborative environment that benefits all stakeholders.</p>
+        </div>
+
+        <!-- Contact section -->
+        <div id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Document upload form -->
+        <div class="section upload-form">
+            <h2>Upload Documents</h2>
+            <form id="uploadForm">
+                <label for="document">Choose a file:</label>
+                <input type="file" id="document" name="document" accept=".pdf, .png, .doc, .docx, .xls, .xlsx">
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle form submission
+        document.getElementById('uploadForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const fileInput = document.getElementById('document');
+            if (fileInput.files.length === 0) {
+                alert('Please select a file to upload.');
+            } else {
+                alert('File uploaded successfully!');
+            }
+        });
+    </script>
+</body>
+</html>
